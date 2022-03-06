@@ -18,3 +18,8 @@ https://blog.logrocket.com/typescript-with-node-js-and-express/
 }
 
 -- yarn add -D @types/node @types/express
+
+
+
+#Upload files
+https://attacomsian.com/blog/uploading-files-nodejs-express
