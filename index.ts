@@ -4,6 +4,7 @@ import bodyParser from 'body-parser'
 import cors from 'cors'
 import fileUpload from 'express-fileupload'
 import morgan from 'morgan'
+import path from 'path'
 console.log(process.env)
 const app = express()
 
@@ -19,7 +20,7 @@ app.use(cors())
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(morgan('dev'))
-app.use(express.static('uploads'))
+app.use(express.static(path.join(__dirname, 'uploads')))
 
 const PORT = process.env.PORT
 
