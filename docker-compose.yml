@@ -1,0 +1,15 @@
+version: "3.2"
+
+services:
+  node-superheroes:
+    container_name: srv-node-superheroes
+    restart: always
+    build: .
+    volumes:
+     - type: bind
+       source: .
+       target: /app
+    environment:
+      - PORT=6789
+    ports:
+      - "6789:6789"

@@ -24,7 +24,7 @@ app.use(express.static(path.join(__dirname, 'uploads')))
 
 const PORT = process.env.PORT
 
-app.get('/', (req, res) => res.send('⚡️ Express + TypeScript Server started ⚡️'))
+app.get('/', (req, res) => res.send('⚡️ Express + TypeScript Server started ⚡️⚡️⚡️'))
 
 app.post('/api/upload-hero-image', async (req, res, _next) => {
     try {
